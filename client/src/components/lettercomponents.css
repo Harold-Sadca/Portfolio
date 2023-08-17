@@ -1,0 +1,28 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+}
+
+.text-animate-hover:hover {
+  animation: rubberBand 1s;
+  color: var(--tertiary-colour);
+}
+
+.text-animate._1 {
+  animation-delay: 0.1s;
+}
+
+.text-animate._2 {
+  animation-delay: 0.2s;
+}
