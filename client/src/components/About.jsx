@@ -1,16 +1,8 @@
 import { useEffect, useState } from 'react'
-import {
-  faNode,
-  faGithub,
-  faDev,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import LetterComponent from './LetterComponent'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './about.css'
+import Profile from './Profile'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,29 +37,7 @@ const About = () => {
           From salting dishes to salting passwords, my journey reflects my confidence in tackling anything that comes my way.
           </p>
         </div>
-
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faNode} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faGithub} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faDev} color="#EC4D28" />
-            </div>
-          </div>
-        </div>
+        <Profile />
       </div>
       <Loader type="pacman" />
     </>

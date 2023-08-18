@@ -24,7 +24,7 @@ const Home = () => {
     "GraphQL",
     "Angular",
     "JavaScript",
-    "_Lodash",
+    "Socket.io",
     "MySQL",
     "Redux",
     "REST",
@@ -32,7 +32,7 @@ const Home = () => {
     "PostgreSQL",
     "CSS",
     "TDD",
-    "Mongo"
+    "MongoDB"
   ];
   const [letterClass, setLetterClass] = useState('text-animate')
 

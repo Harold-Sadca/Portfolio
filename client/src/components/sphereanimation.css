@@ -26,6 +26,10 @@
   will-change: transform, opacity, filter;
 }
 
+.tag-cloud__item:nth-child(even) {
+  color: var(--secondary-colour);
+}
+
 
 @media screen and (max-width: 1200px) {
   .body {
