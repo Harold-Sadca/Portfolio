@@ -1,5 +1,4 @@
 .nav-bar {
-  /* background: #333333; */
   background: var(--secondary-colour);
   width: 60px;
   height: 100%;
@@ -37,7 +36,7 @@
 
 .nav-bar nav a {
   font-size: 22px;
-  color: #4d4d4e;
+  color: var(--secondary-colour);
   display: block;
   line-height: 51px;
   height: 51px;
@@ -85,10 +84,6 @@
 
 .nav-bar nav a.contact-link:after {
   content: 'CONTACT';
-}
-
-.nav-bar nav a.portfolio-link:after {
-  content: 'PORTFOLIO';
 }
 
 .nav-bar nav a.active svg {
@@ -140,15 +135,20 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: #181818;
-    height: 100%;
+    background: var(--secondary-colour);
     margin: 0;
+    height: 65px;
     z-index: 2;
     position: fixed;
   }
+  .nav-bar{
+    height: 65px;
+  }
 
-  .nav-bar nav.mobile-show {
-    display: block;
+  nav.mobile-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-bar nav a {
@@ -174,5 +174,10 @@
     top: 15px;
     right: 15px;
     display: block;
+    z-index: 3;
+  }
+
+  .hide {
+    display: none;
   }
 }

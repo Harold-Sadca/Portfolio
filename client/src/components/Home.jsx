@@ -4,8 +4,36 @@ import Loader from 'react-loaders'
 import LetterComponent from './LetterComponent'
 import '../App.css'
 import './home.css'
+import Profile from './Profile'
+import SphereAnimation from './SphereAnimation'
+// import Logo from '../assets/images/logo.png'
 
 const Home = () => {
+  const texts = [
+    "React",
+    "GraphQL",
+    "TypeScript",
+    "Sequelize",
+    "Apollo",
+    "NodeJS",
+    "Express",
+    "JWT",
+    "Passport",
+    "Git",
+    "Netlify",
+    "GraphQL",
+    "Angular",
+    "JavaScript",
+    "_Lodash",
+    "MySQL",
+    "Redux",
+    "REST",
+    "Cloudinary",
+    "PostgreSQL",
+    "CSS",
+    "TDD",
+    "Mongo"
+  ];
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = [' ','H', 'a', 'r', 'o', 'l', 'd']
@@ -44,8 +72,8 @@ const Home = () => {
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
             {/* <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
+              src={Logo}
+              alt="JavaScript Developer"
             /> */}
             <LetterComponent
               letterClass={letterClass}
@@ -64,9 +92,8 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
+        <SphereAnimation texts = {texts} />
       </div>
-
       <Loader type="pacman" />
     </>
   )

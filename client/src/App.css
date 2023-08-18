@@ -7,7 +7,7 @@
 
 /* Import statements */
 @import 'animate.css';
-/* @import '~loaders.css/src/animations/pacman.css'; */
+@import "~animate.css/animate.css";
 
 /* Font Faces */
 @font-face {

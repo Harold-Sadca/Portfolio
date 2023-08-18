@@ -3,14 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
   faBars,
   faClose,
 } from '@fortawesome/free-solid-svg-icons'
@@ -44,14 +41,6 @@ const Nav = () => {
           to="/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -97,11 +86,12 @@ const Nav = () => {
         </li>
       </ul>
       <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#ffd700"
-          size="3x"
-          className='hamburger-icon' />
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className={`hamburger-icon ${showNav ? 'hide' : ''}`}
+      />
     </div>
   )
 }
