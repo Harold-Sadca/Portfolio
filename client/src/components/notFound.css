@@ -1,0 +1,29 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.flat-button {
+  color: var(--secondary-colour);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid var(--secondary-colour);
+  float: left;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.flat-button:hover {
+  color: var(--tertiary-colour);
+  background-color: var(--secondary-colour);
+  border: 1px solid var(--tertiary-colour);
+}

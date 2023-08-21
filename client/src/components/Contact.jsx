@@ -18,7 +18,7 @@ import '../App.css'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
-  const texts = ['hsadca@yahoo.com', 'Harold Sadca']
+
 
   useEffect(() => {
     return setLetterClass('text-animate-hover')
