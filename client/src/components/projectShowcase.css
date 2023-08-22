@@ -1,0 +1,39 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-left: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--tertiary-colour);
+}
+
+.infinite-scroll-loop-outer {
+  position: relative;
+}
+
+.infinite-scroll-loop-outer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    #6B3FA0 0%,
+      rgba(141, 79, 150, 0) calc(15%),
+      rgba(139, 72, 141, 0) calc(85%),
+      #fff 100%
+  );
+  pointer-events: none;
+}
+
+.infinite-scroll-loop-inner {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.infinite-scroll-loop-inner::-webkit-scrollbar {
+  display: none;
+}

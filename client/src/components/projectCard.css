@@ -1,0 +1,10 @@
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 600px;
+  margin-top: 5rem;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
