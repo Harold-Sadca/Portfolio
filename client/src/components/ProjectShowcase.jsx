@@ -14,12 +14,30 @@ const ProjectShowcase = () => {
           <h1>
             <LetterComponent
               letterClass={'text-animate'}
+              strArray={['S', 'k', 'i', 'l', 'l', 's']}
+              idx={15}
+            />
+          </h1>
+          <p className='skills-container'>
+            <h2 className='skills-label'>Front-End</h2>
+            TypeScript, JavaScript, React, Next.js, Socket.io, Redux, Axios,
+            Angular, Cloudinary, Cypress, HTML, CSS, jQuery
+          </p>
+          <p className='skills-container'>
+            <h2 className='skills-label'>Back-End</h2>
+            TypeScript, JavaScript, MongoDB, MySQL, PostgreSQL Express,
+            Socket.io, Koa, Sequelize, Cloudinary, Cypress, Mongoose, GraphQL,
+            Apollo, Node.js, RESTful API
+          </p>
+        </div>
+        <div className='projects'>
+          <h1 className='projects-label'>
+            <LetterComponent
+              letterClass={'text-animate'}
               strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
               idx={15}
             />
           </h1>
-        </div>
-        <div className='projects'>
           <InfiniteScrollLoop>
             <div>
               {projects.map((project, idx) => {

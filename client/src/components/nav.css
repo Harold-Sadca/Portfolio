@@ -86,6 +86,10 @@
   content: 'CONTACT';
 }
 
+.nav-bar nav a.projects-link:after {
+  content: 'PROJECTS';
+}
+
 .nav-bar nav a.active svg {
   color: var(--tertiary-colour);
 }
@@ -121,7 +125,7 @@
 @media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
-    position: initial;
+    position: sticky;
     height: auto;
     min-height: auto;
   }
