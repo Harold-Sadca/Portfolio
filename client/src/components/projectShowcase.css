@@ -9,6 +9,10 @@
   color: var(--tertiary-colour);
 }
 
+.project-showcase {
+  overflow-y: hidden;
+}
+
 .projects-label {
   margin-right: 3rem;
   display: flex;
@@ -57,6 +61,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    width: 90%;
+    margin: auto;
+    border-left: 2px solid var(--secondary-colour);
+    border-right: 2px solid var(--secondary-colour);
+  }
+
+  .skills-label {
+    width: auto;
   }
 
   .projects-label {
@@ -71,7 +83,7 @@
       #6B3FA0 0%,
         rgba(141, 79, 150, 0) calc(0%),
         rgba(139, 72, 141, 0) calc(15%),
-        #fff 100%
+        var(--tertiary-colour) 100%
     );
     pointer-events: none;
   }

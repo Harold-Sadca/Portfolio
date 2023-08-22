@@ -9,7 +9,7 @@ console.log(projects);
 const ProjectShowcase = () => {
   return (
     <>
-      <div className='container'>
+      <div className='container project-showcase'>
         <div className='text-zone'>
           <h1>
             <LetterComponent
