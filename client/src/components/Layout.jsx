@@ -1,17 +1,21 @@
-import { Outlet } from 'react-router-dom'
-import '../App.css'
-import './layout.css'
-import Nav from './Nav'
+import { Outlet } from 'react-router-dom';
+import '../App.css';
+import './layout.css';
+import Nav from './Nav';
+import ParticlesBackground from './ParticlesBackground';
 
 const Layout = () => {
   return (
-    <div className="App">
-      <Nav />
-      <div className="page">
-        <Outlet />
+    <>
+      <ParticlesBackground />
+      <div className='App'>
+        <Nav />
+        <div className='page'>
+          <Outlet />
+        </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

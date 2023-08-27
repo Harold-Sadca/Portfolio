@@ -13,10 +13,27 @@ body {
   display: block;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .dashboard {
   margin-top: 200px;
   margin-left: 200px;
 }
+
 
 @media screen and (max-width: 1200px) {
   body {

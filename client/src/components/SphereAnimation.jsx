@@ -1,50 +1,48 @@
 import React, { useState, useRef, useCallback, useEffect, memo } from 'react';
-import './sphereanimation.css'
+import './sphereanimation.css';
 
-
-
-const SphereAnimation = memo(({texts}) => {
+const SphereAnimation = memo(({ texts }) => {
   const tagCloudRef = useRef(null);
   const computePosition = (idx, random = false, size) => {
     if (random) idx = Math.floor(Math.random() * (texts.length + 1));
-  
+
     const phi = Math.acos(-1 + (2 * idx + 1) / texts.length);
     const theta = Math.sqrt((texts.length + 1) * Math.PI) * phi;
-  
+
     return {
       x: (size * Math.cos(theta) * Math.sin(phi)) / 2,
       y: (size * Math.sin(theta) * Math.sin(phi)) / 2,
-      z: (size * Math.cos(phi)) / 2
+      z: (size * Math.cos(phi)) / 2,
     };
   };
-  
+
   const CreateTag = (idx, text, size) => {
     const tagRef = useRef(null);
-  
+
     return {
       idx: idx,
       text: text,
       opacity: 0,
-      filter: "alpha(opacity=0)",
-      transform: "translate3d(-50%, -50%, 0) scale(1)",
+      filter: 'alpha(opacity=0)',
+      transform: 'translate3d(-50%, -50%, 0) scale(1)',
       tagRef: tagRef,
-      ...computePosition(idx, false, size)
+      ...computePosition(idx, false, size),
     };
   };
-  
+
   const createInitialState = (size) => {
     return texts.map((text, i) => {
       return CreateTag(i, text, size);
     });
   };
-  
+
   const { radius, maxSpeed, initSpeed, direction } = {
     radius: 300,
-    maxSpeed: 20,
+    maxSpeed: 15,
     initSpeed: 40,
-    direction: 135
+    direction: 135,
   };
-  
+
   const size = 1.5 * radius;
   const depth = 2 * radius;
   const [items, setItems] = useState(createInitialState(size));
@@ -55,8 +53,12 @@ const SphereAnimation = memo(({texts}) => {
   const mouseY = useRef(mouseY0.current);
 
   const next = useCallback(() => {
-    const a = -((Math.min(Math.max(-mouseY.current, -size), size) / radius) * maxSpeed);
-    const b = ((Math.min(Math.max(-mouseX.current, -size), size) / radius) * maxSpeed);
+    const a = -(
+      (Math.min(Math.max(-mouseY.current, -size), size) / radius) *
+      maxSpeed
+    );
+    const b =
+      (Math.min(Math.max(-mouseX.current, -size), size) / radius) * maxSpeed;
 
     if (Math.abs(a) <= 0.01 && Math.abs(b) <= 0.01) return;
 
@@ -65,7 +67,7 @@ const SphereAnimation = memo(({texts}) => {
       Math.sin(a * l),
       Math.cos(a * l),
       Math.sin(b * l),
-      Math.cos(b * l)
+      Math.cos(b * l),
     ];
 
     setItems((prev) => {
@@ -97,7 +99,7 @@ const SphereAnimation = memo(({texts}) => {
             z: rz2,
             opacity: alpha,
             transform: `translate3d(${left}px, ${top}px, 0) scale(${item.scale})`,
-            filter: `alpha(opacity=${100 * alpha})`
+            filter: `alpha(opacity=${100 * alpha})`,
           };
         }
       });
@@ -116,40 +118,40 @@ const SphereAnimation = memo(({texts}) => {
   return (
     <div className='body'>
       <div
-      ref={tagCloudRef}
-      className="tag-cloud"
-      onMouseMove={(ev) => {
-        if (tagCloudRef.current) {
-          const rect = tagCloudRef.current.getBoundingClientRect();
-          mouseX.current = (ev.clientX - (rect.left + rect.width / 2)) / 5;
-          mouseY.current = (ev.clientY - (rect.top + rect.height / 2)) / 5;
-        }
-      }}
-      style={{
-        position: "relative",
-        width: `${2 * radius}px`,
-        height: `${2 * radius}px`
-      }}
-    >
-      {items.map((item) => {
-        return (
-          <span
-            key={item.idx}
-            className="tag-cloud__item"
-            ref={item.tagRef}
-            style={{
-              filter: item.filter,
-              opacity: item.opacity,
-              transform: item.transform
-            }}
-          >
-            {item.text}
-          </span>
-        );
-      })}
-    </div>
+        ref={tagCloudRef}
+        className='tag-cloud'
+        onMouseMove={(ev) => {
+          if (tagCloudRef.current) {
+            const rect = tagCloudRef.current.getBoundingClientRect();
+            mouseX.current = (ev.clientX - (rect.left + rect.width / 2)) / 5;
+            mouseY.current = (ev.clientY - (rect.top + rect.height / 2)) / 5;
+          }
+        }}
+        style={{
+          position: 'relative',
+          width: `${2 * radius}px`,
+          height: `${2 * radius}px`,
+        }}
+      >
+        {items.map((item) => {
+          return (
+            <span
+              key={item.idx}
+              className='tag-cloud__item'
+              ref={item.tagRef}
+              style={{
+                filter: item.filter,
+                opacity: item.opacity,
+                transform: item.transform,
+              }}
+            >
+              {item.text}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 });
 
-export default SphereAnimation
+export default SphereAnimation;

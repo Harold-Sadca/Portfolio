@@ -5,6 +5,7 @@ import Layout from './components/Layout'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 import ProjectShowcase from './components/ProjectShowcase'
+import ParticlesBackground from './components/ParticlesBackground'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<ProjectShowcase />} />
+          <Route path="particle" element={<ParticlesBackground />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
