@@ -34,6 +34,12 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+
+  :hover {
+    background-color: var(--tertiary-colour);
+    border: none;
+    color: var(--secondary-colour);
+  }
 }
 
 .link {
