@@ -1,12 +1,26 @@
 /* Variable */
 :root {
   --background-colour: #F1EDEB;
+  --dark-background: #333333;
   --primary-colour: #004080; /*  background color for headers or sections call-to-action buttons or links text headings or titles  */
+  --dark-primary: #6CA6CD;
   --complementary-colour: #6CA6CD; /*  accent color for buttons, icons, or interactive elements hover effects or highlights backgrounds of specific sections or blocks   */
+  --dark-complementary: #999999;
   --complementary-colour-two: #FFFFFF; /*  background color for content areas main content area  for text in sections with darker backgrounds  */
   --text-colour: #333333;
+  --dark-text: #CCCCCC;
   --tertiary-colour: #FFD700; /* for eye-catching call-to-action buttons, links, or icons use sparingly to draw attention
    to specific elements like quotes or important information selected icons or decorative elements for visual interest */
+  --dark-tertiary: #FFD700;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-colour: #333333;
+    --primary-colour: #6CA6CD;
+    --complementary-colour: #999999;
+    --text-colour: #CCCCCC;
+    --tertiary-colour: #FFD700;
+  }
 }
 
 /* Import statements */
@@ -20,6 +34,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 @font-face {
   font-family: 'La Belle Aurore';
