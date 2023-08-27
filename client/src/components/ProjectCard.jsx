@@ -32,9 +32,9 @@ const ProjectCard = ({
         })}
       </p>
       <div className='links'>
-        <a className='link' target='blank' href={code}>
+        {/* <a className='link' target='blank' href={code}>
           GitHub
-        </a>
+        </a> */}
         {link && (
           <a className='link' target='blank' href={link}>
             Website
