@@ -12,7 +12,7 @@ const ProjectCard = ({
   return (
     <div className='project-card-container'>
       <h2 className='title'>{project}</h2>
-      <p className='tech-container'>
+      <div className='tech-container'>
         {tech.map((el, idx) => {
           return (
             <p className='tech' key={idx}>
@@ -20,9 +20,9 @@ const ProjectCard = ({
             </p>
           );
         })}
-      </p>
+      </div>
       <p className='description'>{description}</p>
-      <p className='contribution-container'>
+      <div className='contribution-container'>
         {contribution.map((el, idx) => {
           return (
             <p className='contribution' key={idx}>
@@ -30,7 +30,7 @@ const ProjectCard = ({
             </p>
           );
         })}
-      </p>
+      </div>
       <div className='links'>
         {/* <a className='link' target='blank' href={code}>
           GitHub

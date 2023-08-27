@@ -8,20 +8,29 @@ import {
   faBars,
   faClose,
   faDiagramProject,
+  faMoon,
+  faSun,
 } from '@fortawesome/free-solid-svg-icons';
-// import Logo from '../assets/images/logo.png'
+import Logo from '../assets/images/logo.png';
 import './nav.css';
 import '../App.css';
 import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
+  const root = document.documentElement;
+
+  const toggle = () => {
+    document.documentElement.classList.toggle('dark-mode');
+  };
 
   return (
     <div className='nav-bar'>
-      <Link className='logo' to='/' onClick={() => setShowNav(false)}>
-        {/* <img src={Logo} alt="Logo" /> */}
-      </Link>
+      {/* <div className='mode-toggle'>
+        <NavLink onClick={toggle}>
+          <FontAwesomeIcon icon={faMoon} color='#4d4d4e' />
+        </NavLink>
+      </div> */}
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
           exact='true'

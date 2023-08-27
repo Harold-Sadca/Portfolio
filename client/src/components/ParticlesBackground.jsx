@@ -1,17 +1,18 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import '../index.css';
-import { tsParticles } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 function ParticlesBackground() {
+  const [isDarkMode, setIsDarkMode] = useState(
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
+
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <Particles
@@ -21,7 +22,7 @@ function ParticlesBackground() {
       loaded={particlesLoaded}
       options={{
         background: {
-          color: '#ECECEC',
+          color: isDarkMode ? '#333333' : '#ECECEC',
         },
         interactivity: {
           events: {

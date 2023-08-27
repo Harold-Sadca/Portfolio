@@ -4,9 +4,7 @@ import Loader from 'react-loaders';
 import LetterComponent from './LetterComponent';
 import '../App.css';
 import './home.css';
-import Profile from './Profile';
 import SphereAnimation from './SphereAnimation';
-// import Logo from '../assets/images/logo.png'
 
 const Home = () => {
   const texts = [
@@ -71,10 +69,6 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            {/* <img
-              src={Logo}
-              alt="JavaScript Developer"
-            /> */}
             <LetterComponent
               letterClass={letterClass}
               strArray={nameArray}

@@ -4,8 +4,6 @@ import './projectShowcase.css';
 import ProjectCard from './ProjectCard';
 import { projects, InfiniteScrollLoop } from '../utils/projects';
 
-console.log(projects);
-
 const ProjectShowcase = () => {
   return (
     <>

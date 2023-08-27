@@ -8,20 +8,26 @@
   min-height: 500px;
 }
 
-.nav-bar .logo {
+.nav-bar .mode-toggle {
   display: block;
   padding: 8px 0;
 }
 
-.nav-bar .logo img {
+.nav-bar .mode-toggle img {
   display: block;
   margin: 8px auto;
   width: 50px;
   height: auto;
 }
 
-.nav-bar .logo img.sub-logo {
+.nav-bar .mode-toggle img.sub-mode-toggle {
   width: 50px;
+}
+
+.mode-toggle {
+  text-align: center;
+  height: 210px;
+  width: 100%;
 }
 
 .nav-bar nav {
@@ -34,7 +40,7 @@
   width: 100%;
 }
 
-.nav-bar nav a {
+.nav-bar nav a, .mode-toggle a {
   font-size: 22px;
   color: var(--complementary-colour);
   display: block;
@@ -131,7 +137,8 @@
   }
 
   .nav-bar ul,
-  .nav-bar nav {
+  .nav-bar nav,
+  .mode-toggle a {
     display: none;
   }
 
