@@ -37,10 +37,10 @@
 .contact-form input[type='email'] {
   width: 100%;
   border: 0;
-  background: var(--tertiary-colour);
+  background: var(--complementary-colour-two);
   height: 50px;
   font-size: 16px;
-  color: var(--secondary-colour);
+  color: var(--text-colour);
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -48,22 +48,22 @@
 .contact-form textarea {
   width: 100%;
   border: 0;
-  background: var(--tertiary-colour);
+  background: var(--complementary-colour-two);
   height: 50px;
   font-size: 16px;
-  color: var(--secondary-colour);
+  color: var(--text-colour);
   padding: 20px;
   box-sizing: border-box;
   min-height: 150px;
 }
 
 .contact-form .flat-button {
-  color: var(--secondary-colour);
+  color: var(--text-colour);
   font-size: 11px;
   letter-spacing: 3px;
   text-decoration: none;
   padding: 8px 10px;
-  border: 1px solid var(--secondary-colour);
+  border: 1px solid var(--complementary-colour);
   float: left;
   border-radius: 4px;
   background: 0 0;
@@ -76,18 +76,18 @@
 .contact-name::before{
   content: '<const name = Harold Sadca />';
   animation: fadeIn 1s 1.7s backwards;
-  color: var(--tertiary-colour);
+  color: var(--text-colour);
 }
 
 .contact-name::after{
   content: '<let email = hsadca@yahoo.com />';
   animation: fadeIn 1s 1.7s backwards;
-  color: var(--tertiary-colour);
+  color: var(--text-colour);
 }
 
 .flat-button:hover {
   color: var(--tertiary-colour);
-  background-color: var(--secondary-colour);
+  background-color: var(--complementary-colour-two);
   border: 1px solid var(--tertiary-colour);
 }
 

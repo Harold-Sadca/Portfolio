@@ -5,8 +5,8 @@
   width: 600px;
   margin-top: 5rem;
   align-items: center;
-  border-top: 3px solid var(--secondary-colour);
-  border-bottom: 3px solid var(--secondary-colour);
+  border-top: 3px solid var(--complementary-colour);
+  border-bottom: 3px solid var(--complementary-colour);
 }
 
 .tech-container {
@@ -21,7 +21,7 @@
 }
 
 .tech {
-  border: 1px solid var(--secondary-colour);
+  border: 1px solid var(--complementary-colour);
   font-size: 1.5rem;
   padding: 1rem;
   margin: .5rem;
@@ -38,18 +38,18 @@
   :hover {
     background-color: var(--tertiary-colour);
     border: none;
-    color: var(--secondary-colour);
+    color: var(--complementary-colour);
   }
 }
 
 .link {
   text-decoration: none;
-  border: 1px solid var(--secondary-colour);
+  border: 1px solid var(--complementary-colour);
   font-size: 1.5rem;
   padding: 1rem;
   margin: .5rem;
   border-radius: 5px;
-  color: var(--tertiary-colour);
+  color: var(--text-colour);
 }
 
 @media screen and (max-width: 1200px) {

@@ -7,12 +7,12 @@
 }
 
 .flat-button {
-  color: var(--secondary-colour);
+  color: var(--complementary-colour);
   font-size: 11px;
   letter-spacing: 3px;
   text-decoration: none;
   padding: 8px 10px;
-  border: 1px solid var(--secondary-colour);
+  border: 1px solid var(--tertiary-colour);
   float: left;
   border-radius: 4px;
   background: 0 0;
@@ -23,7 +23,7 @@
 }
 
 .flat-button:hover {
-  color: var(--tertiary-colour);
-  background-color: var(--secondary-colour);
+  color: var(--text-colour);
+  background-color: var(--complementary-colour-two);
   border: 1px solid var(--tertiary-colour);
 }

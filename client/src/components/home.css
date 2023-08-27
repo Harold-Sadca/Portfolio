@@ -8,7 +8,7 @@
 }
 
 .home-page h1 {
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   font-size: 56px;
   line-height: 53px;
   margin: 0;
@@ -18,7 +18,7 @@
 
 .home-page h1:before {
   font-family: 'La Belle Aurore', cursive;
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   font-size: 18px;
   position: absolute;
   margin-top: -40px;
@@ -28,7 +28,7 @@
 
 .home-page h1:after {
   font-family: 'La Belle Aurore', cursive;
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   font-size: 18px;
   position: absolute;
   margin-top: 18px;
@@ -47,7 +47,7 @@
 }
 
 .home-page h2 {
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   margin-top: 20px;
   font-weight: 400;
   font-size: 11px;
@@ -57,14 +57,14 @@
 }
 
 .home-page .flat-button {
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 4px;
   font-family: sans-serif;
   text-decoration: none;
   padding: 10px 18px;
-  border: 1px solid var(--tertiary-colour);
+  border: 1px solid var(--primary-colour);
   margin-top: 25px;
   float: left;
   animation: fadeInAnimation 1s 1.8s backwards;
@@ -72,8 +72,9 @@
 }
 
 .home-page .flat-button:hover {
-  background: var(--tertiary-colour);
-  color: #333;
+  background: var(--complementary-colour-two);
+  font-weight: 600;
+  color: var(--text-colour);
 }
 
 @media screen and (max-width: 1200px) {

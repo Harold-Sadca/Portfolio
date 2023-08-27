@@ -1,5 +1,5 @@
 .nav-bar {
-  background: var(--secondary-colour);
+  background: var(--complementary-colour);
   width: 60px;
   height: 100%;
   position: absolute;
@@ -36,7 +36,7 @@
 
 .nav-bar nav a {
   font-size: 22px;
-  color: var(--secondary-colour);
+  color: var(--complementary-colour);
   display: block;
   line-height: 51px;
   height: 51px;
@@ -139,7 +139,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: var(--secondary-colour);
+    background: var(--complementary-colour);
     margin: 0;
     height: 65px;
     z-index: 2;

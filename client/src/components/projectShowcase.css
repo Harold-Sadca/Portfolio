@@ -6,7 +6,7 @@
   margin-left: 50%;
   align-items: center;
   justify-content: center;
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
 }
 
 .project-showcase {
@@ -20,7 +20,7 @@
 }
 
 .skills-label {
-  border-bottom: 1px solid var(--secondary-colour);
+  border-bottom: 1px solid var(--complementary-colour);
 }
 
 .skills-container {
@@ -63,8 +63,8 @@
     margin-left: 0;
     width: 90%;
     margin: auto;
-    border-left: 2px solid var(--secondary-colour);
-    border-right: 2px solid var(--secondary-colour);
+    border-left: 2px solid var(--complementary-colour);
+    border-right: 2px solid var(--complementary-colour);
   }
 
   .skills-label {
@@ -83,7 +83,7 @@
       #6B3FA0 0%,
         rgba(141, 79, 150, 0) calc(0%),
         rgba(139, 72, 141, 0) calc(15%),
-        var(--tertiary-colour) 100%
+        var(--primary-colour) 100%
     );
     pointer-events: none;
   }

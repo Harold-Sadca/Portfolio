@@ -27,7 +27,11 @@
 }
 
 .tag-cloud__item:nth-child(even) {
-  color: var(--secondary-colour);
+  color: var(--text-colour);
+}
+
+.tag-cloud__item:nth-child(odd) {
+  color: var(--complementary-colour);
 }
 
 

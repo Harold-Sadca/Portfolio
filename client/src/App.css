@@ -1,9 +1,12 @@
 /* Variable */
 :root {
-  --background-colour: #F5F5F5;
-  --primary-colour: #6B3FA0;
-  --secondary-colour: #333333;
-  --tertiary-colour: #F5F5F5;
+  --background-colour: #F1EDEB;
+  --primary-colour: #004080; /*  background color for headers or sections call-to-action buttons or links text headings or titles  */
+  --complementary-colour: #6CA6CD; /*  accent color for buttons, icons, or interactive elements hover effects or highlights backgrounds of specific sections or blocks   */
+  --complementary-colour-two: #FFFFFF; /*  background color for content areas main content area  for text in sections with darker backgrounds  */
+  --text-colour: #333333;
+  --tertiary-colour: #FFD700; /* for eye-catching call-to-action buttons, links, or icons use sparingly to draw attention
+   to specific elements like quotes or important information selected icons or decorative elements for visual interest */
 }
 
 /* Import statements */

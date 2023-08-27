@@ -13,7 +13,7 @@
 
 /* Tags Styles */
 .tags {
-  color: var(--tertiary-colour);
+  color: var(--text-colour);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -48,7 +48,7 @@
 h1 {
   font-size: 5rem;
   font-family: 'Coolvetica';
-  color: var(--tertiary-colour);
+  color: var(--primary-colour);
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -57,7 +57,7 @@ h1 {
 }
 h1:before {
   font-family: 'La Belle Aurore', cursive;
-  color: var(--secondary-colour);
+  color: var(--text-colour);
   font-size: 18px;
   position: absolute;
   margin-top: -10px;
@@ -67,7 +67,7 @@ h1:before {
 }
 h1:after {
   font-family: 'La Belle Aurore', cursive;
-  color: var(--secondary-colour);
+  color: var(--text-colour);
   font-size: 18px;
   line-height: 18px;
   position: absolute;
@@ -79,8 +79,8 @@ h1:after {
 
 /* Paragraph Styles */
 p {
-  font-size: 13px;
-  color: var(--tertiary-colour);
+  font-size: 15px;
+  color: var(--text-colour);
   font-family: sans-serif;
   font-weight: 300;
   max-width: fit-content;
