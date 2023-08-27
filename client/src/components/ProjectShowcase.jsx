@@ -31,13 +31,13 @@ const ProjectShowcase = () => {
           </p>
         </div>
         <div className='projects'>
-          <h1 className='projects-label'>
+          {/* <h1 className='projects-label'>
             <LetterComponent
               letterClass={'text-animate'}
               strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
               idx={15}
             />
-          </h1>
+          </h1> */}
           <InfiniteScrollLoop>
             <div>
               {projects.map((project, idx) => {

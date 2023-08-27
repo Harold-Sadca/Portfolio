@@ -2,6 +2,28 @@ import React from 'react';
 
 export const projects = [
   {
+      name: 'TriviaTrek',
+      description: 'A dynamic quiz app that challenges users knowledge across various categories. Select quiz categories, difficulty levels, and types to customize your experience.',
+      contribution: ['● Engineered a feature-rich quiz app using React and Redux, offering dynamic customization options for categories, difficulty levels, and quiz types.',
+        '● Integrated with an external API to fetch diverse trivia questions, ensuring engaging and interactive user experiences.',
+        '● Employed Redux for efficient state management, enabling data persistence and smooth navigation for users.',
+        '● Demonstrated problem-solving skills by resolving data synchronization challenges between API responses and app components, ensuring accurate and up-to-date content presentation.',
+        '● Crafted a responsive UI, showcasing proficiency in modern web development, user interface design, and RESTful API integration while following the best practices.'],
+      tech:['Redux.js', 'TypeScript', 'React.js', 'CSS'],
+      code:'https://github.com/Harold-Sadca/TriviaTrek',
+      link:'https://triviatrek.netlify.app/'},
+  {
+    name: 'MealRoulette',
+    description: 'Meal Roulette is a comprehensive platform designed to inspire and plan meals, and explore new flavors with ease.',
+    contribution: ['● Took ownership of the end-to-end development of the full stack application, working independently as the sole software engineer involved in the project.',
+      '● Integrated authentication using Passport enhancing security and user experience.',
+      '● Integrated a cocktail API to give users random cocktail and save it to the database only when added to favourite.',
+      '● Crafted and executed the design and implementation of the underlying API and data modeling, ensuring each component are up to standard every aspect of the application.',
+      '● Designed both the components of both client and server to ensure seamless integration.'],
+      tech:['Redux.js', 'JavaScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'React.js', 'Passport', 'CSS'],
+      code:'https://github.com/Harold-Sadca/Meal-Roulette-',
+      link:''},
+      {
     name: 'DocCare',
     description: 'DocCare is a private healthcare platform, which prioritize the patients well-being and provide seamless access to quality medical care.',
     contribution: ['● Developed a scalable full stack private healthcare application by capitalising on the power of Redux, Next.js, MySQL and Typescript.',
@@ -27,27 +49,16 @@ export const projects = [
     link:''
   },
   {
-    name: 'MealRoulette',
-    description: 'Meal Roulette is a comprehensive platform designed to inspire and plan meals, and explore new flavors with ease.',
-    contribution: ['● Took ownership of the end-to-end development of the full stack application, working independently as the sole software engineer involved in the project.',
-      '● Integrated authentication using Passport enhancing security and user experience.',
-      '● Integrated a cocktail API to give users random cocktail and save it to the database only when added to favourite.',
-      '● Crafted and executed the design and implementation of the underlying API and data modeling, ensuring each component are up to standard every aspect of the application.',
-      '● Designed both the components of both client and server to ensure seamless integration.'],
-    tech:['Redux.js', 'JavaScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'React.js', 'Passport', 'CSS'],
-    code:'https://github.com/Harold-Sadca/Meal-Roulette-',
-    link:''},
-  {
-      name: 'TriviaTrek',
-      description: 'A dynamic quiz app that challenges users knowledge across various categories. Select quiz categories, difficulty levels, and types to customize your experience.',
-      contribution: ['● Engineered a feature-rich quiz app using React and Redux, offering dynamic customization options for categories, difficulty levels, and quiz types.',
-        '● Integrated with an external API to fetch diverse trivia questions, ensuring engaging and interactive user experiences.',
-        '● Employed Redux for efficient state management, enabling data persistence and smooth navigation for users.',
-        '● Demonstrated problem-solving skills by resolving data synchronization challenges between API responses and app components, ensuring accurate and up-to-date content presentation.',
-        '● Crafted a responsive UI, showcasing proficiency in modern web development, user interface design, and RESTful API integration while following the best practices.'],
-      tech:['Redux.js', 'TypeScript', 'React.js', 'CSS'],
-      code:'https://github.com/Harold-Sadca/TriviaTrek',
-      link:'https://triviatrek.netlify.app/'}
+    name: 'Application Tracker',
+    description: ' This is a web application built to help you keep track of your job applications and interview progress.',
+    contribution: ['● Developed an Application Tracker web app using Node.js, Express, and MongoDB for streamlined job application management.',
+      '● Implemented a responsive frontend with Next.js, incorporating Redux for efficient state management and interactive user experience.',
+      '● Enabled secure user authentication with Passport.js and integrated Axios for real-time communication between frontend and backend.',
+      '● Designed an intuitive user interface with organized data views, filtering options, and application progress tracking.',],
+    tech:['Redux.js', 'TypeScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'Next.js', 'CSS'],
+    code:'https://github.com/Harold-Sadca/DocCare',
+    link:''
+  },
   ]
 
   export function InfiniteScrollLoop({

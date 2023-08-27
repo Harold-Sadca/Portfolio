@@ -1,42 +1,42 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
-import LetterComponent from './LetterComponent'
-import '../App.css'
-import './home.css'
-import Profile from './Profile'
-import SphereAnimation from './SphereAnimation'
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Loader from 'react-loaders';
+import LetterComponent from './LetterComponent';
+import '../App.css';
+import './home.css';
+import Profile from './Profile';
+import SphereAnimation from './SphereAnimation';
 // import Logo from '../assets/images/logo.png'
 
 const Home = () => {
   const texts = [
-    "React",
-    "GraphQL",
-    "TypeScript",
-    "Sequelize",
-    "Apollo",
-    "NodeJS",
-    "Express",
-    "JWT",
-    "Passport",
-    "Git",
-    "Netlify",
-    "GraphQL",
-    "Angular",
-    "JavaScript",
-    "Socket.io",
-    "MySQL",
-    "Redux",
-    "REST",
-    "Cloudinary",
-    "PostgreSQL",
-    "CSS",
-    "TDD",
-    "MongoDB"
+    'React',
+    'GraphQL',
+    'TypeScript',
+    'Sequelize',
+    'Apollo',
+    'NodeJS',
+    'Express',
+    'JWT',
+    'Passport',
+    'Git',
+    'Netlify',
+    'GraphQL',
+    'Angular',
+    'JavaScript',
+    'Socket.io',
+    'MySQL',
+    'Redux',
+    'REST',
+    'Cloudinary',
+    'PostgreSQL',
+    'CSS',
+    'TDD',
+    'MongoDB',
   ];
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate');
 
-  const nameArray = [' ','H', 'a', 'r', 'o', 'l', 'd']
+  const nameArray = [' ', 'H', 'a', 'r', 'o', 'l', 'd'];
   const jobArray = [
     's',
     'o',
@@ -55,16 +55,16 @@ const Home = () => {
     'e',
     'r',
     '.',
-  ]
+  ];
 
   useEffect(() => {
-    return setLetterClass('text-animate-hover')
-  }, [])
+    return setLetterClass('text-animate-hover');
+  }, []);
 
   return (
     <>
-      <div className="container home-page">
-        <div className="text-zone">
+      <div className='container home-page'>
+        <div className='text-zone'>
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -88,15 +88,21 @@ const Home = () => {
             />
           </h1>
           <h2>Full Stack Developer / JavaScript And TypeScript Ninja</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to='/contact' className='flat-button'>
             CONTACT ME
           </Link>
+          <Link to='/about' className='flat-button'>
+            ABOUT
+          </Link>
+          <Link to='/projects' className='flat-button'>
+            WORKS
+          </Link>
         </div>
-        <SphereAnimation texts = {texts} />
+        <SphereAnimation texts={texts} />
       </div>
-      <Loader type="pacman" />
+      <Loader type='pacman' />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
