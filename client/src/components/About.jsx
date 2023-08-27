@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import LetterComponent from './LetterComponent'
-import './about.css'
-import Profile from './Profile'
+import { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
+import LetterComponent from './LetterComponent';
+import './about.css';
+import Profile from './Profile';
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
-    return setLetterClass('text-animate-hover')
-  }, [])
+    return setLetterClass('text-animate-hover');
+  }, []);
 
   return (
     <>
-      <div className="container about-page">
-        <div className="text-zone">
+      <div className='container about-page'>
+        <div className='text-zone'>
           <h1>
             <LetterComponent
               letterClass={letterClass}
@@ -23,25 +23,33 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm Harold a seasoned Full-Stack Software Engineer with a strong command over a variety of JavaScript/Typescript technologies.
+            Hey there, I'm Harold! While my journey began in the culinary world
+            as a Chef, my passion eventually led me to a new adventure – the
+            world of Full-Stack Software Engineering.
           </p>
-          <p align="LEFT">
-            Originally a Chef but started wanting cook letter into doughnuts.
+          <p align='LEFT'>
+            From salting dishes to salting passwords, I've made quite the
+            transition.
           </p>
           <p>
-          From Node and Express to Koa, databases like Mongo and MySQL and RESTful API to GraphQL,
-           I've navigated through the entire web development landscape.
+            From Node to Koa, I'm at ease, expressing wonders with great
+            expertise. Databases Mongo and MySQL I've tamed, in web development,
+            I'm widely acclaimed. RESTful APIs, GraphQL's domain, I've ventured
+            through it all, no terrain in vain.
           </p>
-          <p align="LEFT">
-          Always up for an adventure, I jump into the tech world with curiosity as my compass.
-          From salting dishes to salting passwords, my journey reflects my confidence in tackling anything that comes my way.
+          <p align='LEFT'>
+            I've delved deep into the world of coding with curiosity as my
+            compass. Whether I'm deciphering complex algorithms or refining
+            intricate code structures, my thirst for knowledge kept me moving.
+            This journey of mine reflects a strong confidence in taking on any
+            coding challenge that comes my way.
           </p>
         </div>
         <Profile />
       </div>
-      <Loader type="pacman" />
+      <Loader type='pacman' />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
