@@ -93,7 +93,7 @@
 }
 
 .nav-bar nav a.projects-link:after {
-  content: 'WORKS';
+  content: 'WORK';
 }
 
 .nav-bar nav a.active svg {

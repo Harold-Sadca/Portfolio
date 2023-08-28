@@ -100,7 +100,7 @@ const Home = () => {
             ABOUT
           </Link>
           <Link to='/projects' className='flat-button'>
-            WORKS
+            WORK
           </Link>
         </div>
         <SphereAnimation texts={texts} />
