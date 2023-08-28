@@ -131,6 +131,29 @@
     display: none;
   }
 
+  .job-titles {
+    height: 12rem;
+    display: flex;
+  }
+
+  .titles-list {
+    height: 12rem;
+  }
+
+  @keyframes cycle {
+    0% {top: 0}
+    10% {top: 0}
+    20% {top: -12rem}
+    30% {top: -12rem}
+    40% {top: -24rem;}
+    50% {top: -24rem;}
+    60% {top: -36rem;}
+    70% {top: -36rem;}
+    80% {top: -48rem;}
+    90% {top: -48rem;}
+    100% {top: 0rem;}
+  }
+
   .home-page .text-zone {
     position: initial;
     width: 100%;
