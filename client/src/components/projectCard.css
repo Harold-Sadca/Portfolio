@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 600px;
   width: 600px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   align-items: center;
   border-top: 3px solid var(--complementary-colour);
   border-bottom: 3px solid var(--complementary-colour);
@@ -56,6 +56,7 @@
   .project-card-container {
     margin: auto;
     width: 80%;
+    margin-top: none;
   }
   .tech-container {
     display: flex;

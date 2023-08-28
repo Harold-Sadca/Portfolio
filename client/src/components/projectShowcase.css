@@ -1,10 +1,9 @@
 .projects {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin-left: 50%;
-  align-items: center;
   justify-content: center;
   color: var(--primary-colour);
 }
@@ -39,10 +38,10 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    #6B3FA0 0%,
+    var(--complementary-colour) 0%,
       rgba(141, 79, 150, 0) calc(15%),
       rgba(139, 72, 141, 0) calc(85%),
-      #fff 100%
+      var(--background-colour) 100%
   );
   pointer-events: none;
 }
@@ -61,6 +60,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    align-items: center;
     width: 90%;
     margin: auto;
     border-left: 2px solid var(--complementary-colour);
