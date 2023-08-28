@@ -77,6 +77,53 @@
   color: var(--text-colour);
 }
 
+.job-titles {
+  overflow: hidden;
+  height: 6rem;
+  margin-top: 1rem;
+}
+
+.titles-list {
+  position: relative;
+  animation: cycle ease 12s infinite;
+  height: 100%;
+}
+
+.job-title {
+  display: block;
+  height: 100%;
+}
+
+@keyframes cycle {
+  0% {top: 0}
+  10% {top: 0}
+  20% {top: -6rem}
+  30% {top: -6rem}
+  40% {top: -12rem;}
+  50% {top: -12rem;}
+  60% {top: -18rem;}
+  70% {top: -18rem;}
+  80% {top: -24rem;}
+  90% {top: -24rem;}
+  100% {top: 0rem;}
+}
+
+.job-title:nth-child(1) {
+  color:var(--primary-colour);
+}
+.job-title:nth-child(2) {
+  color:var(--complementary-colour);
+}
+.job-title:nth-child(3) {
+  color:var(--text-colour);
+}
+.job-title:nth-child(4) {
+  color:var(--primary-colour);
+}
+.job-title:nth-child(5) {
+  color:var(--complementary-colour);
+}
+
 @media screen and (max-width: 1200px) {
   .tags,
   .home-page h1:before,

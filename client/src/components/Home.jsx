@@ -5,6 +5,7 @@ import LetterComponent from './LetterComponent';
 import '../App.css';
 import './home.css';
 import SphereAnimation from './SphereAnimation';
+import { jobTitles } from '../utils/jobTitles';
 
 const Home = () => {
   const texts = [
@@ -35,25 +36,25 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
   const nameArray = [' ', 'H', 'a', 'r', 'o', 'l', 'd'];
-  const jobArray = [
-    's',
-    'o',
-    'f',
-    'w',
-    'a',
-    'r',
-    'e',
-    ' ',
-    'e',
-    'n',
-    'g',
-    'i',
-    'n',
-    'e',
-    'e',
-    'r',
-    '.',
-  ];
+  // const jobArray = [
+  //   's',
+  //   'o',
+  //   'f',
+  //   'w',
+  //   'a',
+  //   'r',
+  //   'e',
+  //   ' ',
+  //   'e',
+  //   'n',
+  //   'g',
+  //   'i',
+  //   'n',
+  //   'e',
+  //   'e',
+  //   'r',
+  //   '.',
+  // ];
 
   useEffect(() => {
     return setLetterClass('text-animate-hover');
@@ -75,11 +76,21 @@ const Home = () => {
               idx={15}
             />
             <br />
-            <LetterComponent
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
+            <div className='job-titles'>
+              <div className='titles-list'>
+                {jobTitles.map((jobArray, idx) => {
+                  return (
+                    <span key={idx} className='job-title'>
+                      <LetterComponent
+                        letterClass={letterClass}
+                        strArray={jobArray}
+                        idx={22}
+                      />
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
           </h1>
           <h2>Full Stack Developer / JavaScript And TypeScript Ninja</h2>
           <Link to='/contact' className='flat-button'>
