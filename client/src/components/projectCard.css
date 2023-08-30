@@ -56,8 +56,10 @@
   .project-card-container {
     margin: auto;
     width: 80%;
+    margin-top: 5rem;
     margin-top: none;
   }
+  
   .tech-container {
     display: flex;
     flex-direction: row;

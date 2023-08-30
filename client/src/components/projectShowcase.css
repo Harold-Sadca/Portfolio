@@ -61,6 +61,7 @@
     flex-direction: column;
     margin-left: 0;
     align-items: center;
+    height: 100%;
     width: 90%;
     margin: auto;
     border-left: 2px solid var(--complementary-colour);
