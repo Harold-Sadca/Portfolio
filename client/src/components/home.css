@@ -130,29 +130,32 @@
   .home-page h1:after {
     display: none;
   }
+  .home-page h1 {
+    font-size: 4.5rem;
+  }
 
   .job-titles {
-    height: 12rem;
+    width: 44rem;
+    /* display: flex;
+    flex-direction: row; */
+    
+  }
+/* 
+  .job-title {
     display: flex;
+    flex-direction: row;
   }
 
   .titles-list {
-    height: 12rem;
-  }
+    display: flex;
+    flex-direction: row;
+  } */
+  
 
-  @keyframes cycle {
-    0% {top: 0}
-    10% {top: 0}
-    20% {top: -12rem}
-    30% {top: -12rem}
-    40% {top: -24rem;}
-    50% {top: -24rem;}
-    60% {top: -36rem;}
-    70% {top: -36rem;}
-    80% {top: -48rem;}
-    90% {top: -48rem;}
-    100% {top: 0rem;}
-  }
+  /* @keyframes cycle {
+    0% { left: -1rem }
+    100% { left: -204rem }
+  } */
 
   .home-page .text-zone {
     position: initial;
