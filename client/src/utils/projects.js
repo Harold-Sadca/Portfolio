@@ -44,7 +44,7 @@ export const projects = [
       '● Implemented a responsive frontend with Next.js, incorporating Redux for efficient state management and interactive user experience.',
       '● Enabled secure user authentication with Passport.js and integrated Axios for real-time communication between frontend and backend.',
       '● Designed an intuitive user interface with organized data views, filtering options, and application progress tracking.',],
-      tech:['Redux.js', 'TypeScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'Next.js', 'CSS'],
+      tech:['ReduxToolkit', 'TypeScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'Next.js', 'CSS'],
       code:'https://github.com/Harold-Sadca/DocCare',
       link:''
     },
@@ -56,9 +56,19 @@ export const projects = [
           '● Employed Redux for efficient state management, enabling data persistence and smooth navigation for users.',
           '● Demonstrated problem-solving skills by resolving data synchronization challenges between API responses and app components, ensuring accurate and up-to-date content presentation.',
           '● Crafted a responsive UI, showcasing proficiency in modern web development, user interface design, and RESTful API integration while following the best practices.'],
-        tech:['Redux.js', 'TypeScript', 'React.js', 'CSS'],
+        tech:['ReduxToolkit', 'TypeScript', 'React.js', 'CSS'],
         code:'https://github.com/Harold-Sadca/TriviaTrek',
         link:'https://triviatrek.netlify.app/'},
+    {
+        name: 'Application-Tracker',
+        description: 'Application Tracker is a web application for tracking job applications. It provides a user-friendly interface for managing and organizing your job application process.',
+        contribution: ['● Designed a dynamic application for effortless job application management, including adding, editing, and tracking vital details using TypeScript, Next.js, and MongoDB.',
+          '● Streamlined interview tracking for enhanced job search management, recording interview details efficiently.',
+          '● Implemented advanced interview tracking capabilities, enabling users to efficiently record and analyze interview specifics, resulting in an optimized job search strategy.',
+          '● Crafted a secure user experience with registration, authentication, and a dynamic dashboard for efficient job application progress monitoring.',],
+        tech:['ReduxToolkit', 'TypeScript', 'Next.js', 'CSS', 'MaterialUI', 'MongoDB', 'Mongoose', 'Express.js', 'Passport'],
+        code:'https://github.com/Harold-Sadca/Application-Tracker',
+        link:''},
     
   ]
   
