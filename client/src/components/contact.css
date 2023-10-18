@@ -45,6 +45,13 @@
   box-sizing: border-box;
 }
 
+.contact-form input[type='text']:focus,
+.contact-form input[type='email']:focus,
+.contact-form textarea:focus {
+  border: 1px solid var(--text-colour);
+  outline: none;
+}
+
 .contact-form textarea {
   width: 100%;
   border: 0;
