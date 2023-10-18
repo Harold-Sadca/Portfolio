@@ -38,17 +38,6 @@ export const projects = [
       code:'https://github.com/Harold-Sadca/Meal-Roulette-',
       link:''},
     {
-      name: 'Application Tracker',
-      description: ' This is a web application built to help you keep track of your job applications and interview progress.',
-      contribution: ['● Developed an Application Tracker web app using Node.js, Express, and MongoDB for streamlined job application management.',
-      '● Implemented a responsive frontend with Next.js, incorporating Redux for efficient state management and interactive user experience.',
-      '● Enabled secure user authentication with Passport.js and integrated Axios for real-time communication between frontend and backend.',
-      '● Designed an intuitive user interface with organized data views, filtering options, and application progress tracking.',],
-      tech:['ReduxToolkit', 'TypeScript', 'Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'Next.js', 'CSS'],
-      code:'https://github.com/Harold-Sadca/DocCare',
-      link:''
-    },
-    {
         name: 'TriviaTrek',
         description: 'A dynamic quiz app that challenges users knowledge across various categories. Select quiz categories, difficulty levels, and types to customize your experience.',
         contribution: ['● Engineered a feature-rich quiz app using React and Redux, offering dynamic customization options for categories, difficulty levels, and quiz types.',
@@ -66,6 +55,15 @@ export const projects = [
           '● Streamlined interview tracking for enhanced job search management, recording interview details efficiently.',
           '● Implemented advanced interview tracking capabilities, enabling users to efficiently record and analyze interview specifics, resulting in an optimized job search strategy.',
           '● Crafted a secure user experience with registration, authentication, and a dynamic dashboard for efficient job application progress monitoring.',],
+        tech:['ReduxToolkit', 'TypeScript', 'Next.js', 'CSS', 'MaterialUI', 'MongoDB', 'Mongoose', 'Express.js', 'Passport'],
+        code:'https://github.com/Harold-Sadca/Application-Tracker',
+        link:''},
+    {
+        name: 'Chatterbox',
+        description: 'Chatterbox is a modern real-time chat app that fosters instant, secure, and private communication. It is designed for effortless interaction in both social and professional settings, offering a smooth and responsive chat experience. It provides a smooth and responsive chat experience, ensuring users can stay connected and communicate effortlessly.',
+        contribution: ['● Designed and implemented a feature-rich, real-time chat application with Next.js, Firebase, Redux, Material UI and CSS, driving a seamless user experience and enabling instant communication among users.',
+          '● Leveraged Firebase as the backend, integrating robust authentication, storage, and real-time database capabilities, showcasing proficiency in cloud services and data management',
+          '● Successfully utilized responsive design techniques to ensure a user-friendly experience across various devices, resulting in enhanced accessibility and user satisfaction.',],
         tech:['ReduxToolkit', 'TypeScript', 'Next.js', 'CSS', 'MaterialUI', 'MongoDB', 'Mongoose', 'Express.js', 'Passport'],
         code:'https://github.com/Harold-Sadca/Application-Tracker',
         link:''},

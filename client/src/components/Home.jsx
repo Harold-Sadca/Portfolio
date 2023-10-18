@@ -21,7 +21,7 @@ const Home = () => {
     'Git',
     'Netlify',
     'GraphQL',
-    'Angular',
+    'Firebase',
     'JavaScript',
     'Socket.io',
     'MySQL',
@@ -36,25 +36,6 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
   const nameArray = [' ', 'H', 'a', 'r', 'o', 'l', 'd'];
-  // const jobArray = [
-  //   's',
-  //   'o',
-  //   'f',
-  //   'w',
-  //   'a',
-  //   'r',
-  //   'e',
-  //   ' ',
-  //   'e',
-  //   'n',
-  //   'g',
-  //   'i',
-  //   'n',
-  //   'e',
-  //   'e',
-  //   'r',
-  //   '.',
-  // ];
 
   useEffect(() => {
     return setLetterClass('text-animate-hover');
