@@ -3,6 +3,7 @@ import '../App.css';
 import './layout.css';
 import Nav from './Nav';
 import ParticlesBackground from './ParticlesBackground';
+import Chatbot from './Chatbot';
 
 const Layout = () => {
   return (
@@ -12,6 +13,9 @@ const Layout = () => {
         <Nav />
         <div className='page'>
           <Outlet />
+        </div>
+        <div>
+          <Chatbot />
         </div>
       </div>
     </>
