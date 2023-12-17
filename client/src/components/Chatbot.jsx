@@ -5,10 +5,7 @@ import { chatbot } from '../utils/chatbot';
 const Chatbot = () => {
   const [displayText, setDisplaytext] = useState(chatbot.greeting);
   const [isOpen, setIsOpen] = useState(false);
-
-  // const scrollToBottom = () => {
-  //   messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
-  // };
+  const [currentDisplay, setCurrentDisplay] = useState('greeting');
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,6 +15,7 @@ const Chatbot = () => {
 
   const changeText = (e) => {
     setDisplaytext(chatbot.conversationFlow[e.target.value]);
+    setCurrentDisplay(e.target.value);
   };
 
   const toggleChatbox = () => {
@@ -44,15 +42,17 @@ const Chatbot = () => {
             <div className='chatbox-buttons'>
               {chatbot.chatOptions.map((option) => {
                 return (
-                  <button
-                    key={option}
-                    value={option}
-                    onClick={(e) => {
-                      changeText(e);
-                    }}
-                  >
-                    {option}
-                  </button>
+                  currentDisplay !== option && (
+                    <button
+                      key={option}
+                      value={option}
+                      onClick={(e) => {
+                        changeText(e);
+                      }}
+                    >
+                      {option}
+                    </button>
+                  )
                 );
               })}
             </div>
